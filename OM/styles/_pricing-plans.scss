@@ -1,0 +1,111 @@
+.pricing-plans{
+    background: #F6F8FA;
+
+    &__content{
+        padding-top: 144px;
+        padding-bottom: 162px;
+    }
+
+    &__title{
+        margin-bottom: 109px;
+    }
+
+    &__rows{
+        display: flex;
+    }
+}
+
+.card{
+    flex: 1 1 30%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    position: relative;
+
+    &:last-child{
+        margin-right: 0;
+    }
+
+    &__price{
+        padding-top: 54px;
+        display: block;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 80px;
+        line-height: 109px;
+        color: #242121;
+        position: relative;
+        margin-bottom: 51px;
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 23px;
+            height: 54px;
+            top: calc(50% - 28px);
+            left: -20px;
+            background: url('../img/pricing-plans/icon/$.svg') no-repeat;
+        }
+    }
+
+    &__services{
+        display: block;
+        margin-bottom: 30px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #242121;
+
+        &:last-child{
+            margin: 0;
+        }
+    }
+
+    &__class{
+        position: absolute;
+        top: 24px;
+        left: 25px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        color: #242121;
+    }
+
+    &__choose{
+        padding-top: 39px;
+        margin-bottom: 53px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #242121;
+    }
+}
+
+@media(max-width: 1024.98px){
+    .pricing-plans__rows{
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 0 12% 40px;
+
+        &:last-child{
+            margin: 0 12% 40px;
+        }
+    }
+}
+
+@media (max-width: 768.98px){
+    .pricing-plans__content{
+        padding-top: 100px;
+    }
+}

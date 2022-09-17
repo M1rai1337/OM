@@ -1,0 +1,111 @@
+.magic{
+
+    background-color: #F6F8FA;
+    
+    &__body{
+        padding-top: 101px;
+    }
+
+    &__content{
+        display: flex;
+    }
+
+    &__img{
+        flex: 0 0 50%;
+        height: 840px;
+        background: url('../img/magic/dog.png') 50%/cover no-repeat;;
+    }
+
+    &__info{
+        max-width: 470px;
+        padding-right: 20px;
+        margin-left: 130px;
+    }
+
+    &__title.title{
+        margin-bottom: 85px;
+        line-height: 75px;
+
+        &::after{
+            top: 165px;
+        }
+    }
+
+    &__text{
+        p{
+            line-height: 24px;
+            margin-bottom: 25px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+    .magic__info{
+        max-width: 390px;
+        padding-right: 20px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .magic__info{
+        max-width: 320px;
+        padding-right: 20px;
+        margin-left: 50px;
+    }
+    .magic__title.title{
+        line-height: 45px;
+        margin-bottom: 65px;
+
+        &::after{
+            top: 100px;
+        }
+    }
+
+
+}
+
+@media (max-width: 768.98px){
+    .magic__content{
+        display: block;
+    }
+    
+    .magic__img{
+        display: none;
+    }
+
+    .magic__body{
+        padding-top: 60px;
+    }
+
+    .magic__info{
+        max-width: none;
+        padding: 0 15px;
+        margin-left: 0;
+    }
+
+    .magic__text{
+        padding-bottom: 30px;
+    }
+
+    .magic__title.title{
+        margin-bottom: 40px;
+
+        &::after{
+            top: 53px;
+        }
+    }
+}
+
+@media (max-width: 408.98px){
+    .magic__title.title{
+        &::after{
+            top: 95px;
+        }
+    }
+}

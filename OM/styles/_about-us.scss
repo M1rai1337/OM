@@ -1,0 +1,60 @@
+.about-us{
+    background: #F6F8FA;
+
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 150px;
+        padding-top: 143px;
+    }
+
+    &__text{
+        max-width: 750px;
+
+        p{
+            line-height: 24px;
+            margin-bottom: 25px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .title{
+        font-size: 48px;
+    }
+}
+
+
+@media (max-width: 1200px){
+    .about-us__text{
+        max-width: 585px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .about-us__text {
+        max-width: 440px;
+
+        p{
+            margin-bottom: 18px;
+        }
+    }
+}
+
+@media (max-width: 768.98px){
+    .about-us__content{
+        display: block;
+        padding-top: 70px;
+        padding-bottom: 83px;
+    }
+
+    .about-us__title{
+        margin-bottom: 50px;
+    }
+
+    .about-us__text {
+        max-width: 850px;
+    }
+}

@@ -1,0 +1,115 @@
+.footer{
+    background: #333333;
+
+    &__content{
+        padding-top: 129px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__logo{
+        position: relative;
+        margin-bottom: 72px;
+
+        &::after{
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: -32.5px;
+            width: 150px;
+            height: 2px;
+            background-color: #FCBB08;
+        }
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+
+    &__link{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        color: #FFFFFF;
+        letter-spacing: 4px;
+    }
+
+    &__item{
+        margin-right: 33px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+
+        span{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            text-align: center;
+            color: #FFFFFF;
+            display: inline-block;
+            margin-bottom: 19px;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__arrow{
+        margin-bottom: 60px;
+    }
+}
+
+.aside{
+    background: #2A2C2B;
+    padding: 43px 0 41px;
+
+    span{
+        display: block;
+        max-width: 125px;
+        margin: 0 auto;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: center;
+        color: #CCCCCC;
+    }
+}
+
+@media (max-width: 767.98px){
+    .footer__list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__item{
+        margin-right: 0;
+        margin-bottom: 25px;
+
+        &:last-child{
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    .footer__content{
+        padding-top: 100px;
+    }
+}

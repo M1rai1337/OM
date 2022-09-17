@@ -1,0 +1,86 @@
+.marketing{
+    background: url('../img/marketing/marketing-bg.png') 50%/cover no-repeat;
+
+    &__body{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        padding-top: 247px;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__title{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 72px;
+        line-height: 88px;
+        color: #FFFFFF;
+        margin-bottom: 18px;
+    }
+
+    &__sub-titile{
+        text-align: center;
+        display: block;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 2.74286px;
+        color: #FCBB08;
+        margin-bottom: 179px;
+    }
+
+    &__mouse{
+        margin-bottom: 62px;
+        position: absolute;
+        bottom: -12px;
+        left: calc(50% - 13px);
+    }
+}
+
+@media (max-width: 991.98px){
+    .marketing__title{
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .marketing__sub-titile{
+        margin-bottom: 197px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768.98px){
+    .marketing__title{
+        font-size: 38px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .marketing__sub-titile{
+        margin-bottom: 197px;
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width: 479.98px){
+    .marketing__title{
+        font-size: 34px;
+        margin-bottom: 9px;
+    }
+    .marketing__sub-titile{
+        font-size: 11px;
+    }  
+}
